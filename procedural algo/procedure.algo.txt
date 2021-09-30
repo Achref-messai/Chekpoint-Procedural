@@ -5,7 +5,7 @@ VAR
 BEGIN
     FOR i FROM 0 TO tab1.length-1 DO
         FOR j FROM 0 TO tab2.length-1 DO
-            ps:=v1[i]*v2[j];
+            ps:=ps+v1[i]*v2[j];
         END_FOR
     END_FOR
 END
