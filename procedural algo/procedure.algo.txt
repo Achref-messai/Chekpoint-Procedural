@@ -1,6 +1,6 @@
 PROCEDURE dot_product(VAR v1,v2: ARRAY_OF FLOAT;)
 VAR
-    ps:FLOAT:=0;
+  
     i,j:INTEGER;
 BEGIN
     FOR i FROM 0 TO tab1.length-1 DO
@@ -13,8 +13,8 @@ END
 ALGORITHM dot
 VAR
     i,j:INTEGER;
-    rslt:FLOAT:=0;
     arr1 : ARRAY_OF FLOAT;
+      ps:FLOAT:=0;
     arr2 : ARRAY_OF FLOAT;
 BEGIN
     Writeln('enter the values of the first vectors');
@@ -25,8 +25,8 @@ BEGIN
     FOR i FROM 0 TO (arr2.length-1 ) DO
         readln(arr2[i]);
     END_FOR
-    rslt:=dot_product(arr1,arr2);
-    IF (rslt:=0) THEN
+    dot_product(arr1,arr2);
+    IF (ps:=0) THEN
         write('the 2 vectors are orthogonal');
     ELSE
         write('the 2 vectors are not orthogonal');
